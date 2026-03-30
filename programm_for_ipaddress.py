@@ -27,7 +27,8 @@ def check_alive(ip_address):
     try:
         result = subprocess.run(['ping', '-n', '1', '-w', '1000', ip_address], 
                         capture_output=True, timeout=2)
-        #subprocess.run вызывает утилиту ping в командной строке, -n - количество, 1 - 1 пинг запрос, -w 1000 - 1 секунда на запрос
+        #subprocess.run вызывает утилиту ping в командной строке, -n - количество,
+        #  1 - 1 пинг запрос, -w 1000 - 1 секунда на запрос
         #timeout - общее выполнение команды, capture_output - сохраняет вывод в result
 
         #для Linux:
